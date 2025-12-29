@@ -1,11 +1,7 @@
-import express from "express";
-import v1Routes from "./routes/v1";
+import app from "./app";
 
-const app = express();
-const port = 3000;
+const PORT = 3000;
 
-app.use("/api/v1", v1Routes);
-
-app.listen(port, () => {
-  console.log(`Server running at port: ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running at port: ${PORT}`);
 });
